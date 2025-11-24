@@ -9,6 +9,7 @@ app.use("/test",(req,res)=>{
 	res.status(200).json({msg:"App is testing and working"});
 
 })
+
 app.use("/todos",todoRouter)
 
 app.listen(7000,()=>{

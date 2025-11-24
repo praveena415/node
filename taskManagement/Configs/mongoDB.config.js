@@ -7,7 +7,6 @@ async function connectToDb (){
 		 catch(err){
 			console.log("Something went wrong",err);
 		 }
-		 
 }
 
 module.exports = connectToDb;

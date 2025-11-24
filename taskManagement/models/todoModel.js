@@ -4,6 +4,5 @@ const todoSchema = new mongoose.Schema({
 	description:String,status:String,dueDate:Date
 })
 
-
 const todoModel = mongoose.model("Todo",todoSchema);
 module.exports = todoModel
