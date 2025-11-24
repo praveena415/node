@@ -10,6 +10,7 @@ const accessLimiter = rateLimiter({
 	ipv6Subnet: 56
 });
 
+
 router.get("/open", (req, res) => {
 	res.status(200).json({ msg: "This is an open endpoint!" });
 });

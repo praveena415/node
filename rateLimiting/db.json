@@ -6,6 +6,7 @@
     "total_amount": 65000,
     "order_status": "pending"
   },
+  
   {
     "order_id": 2,
     "customer_name": "Jane Smith",

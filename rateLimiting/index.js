@@ -7,7 +7,7 @@ server.use(express.json());
 
 server.use("/check", (req, res) => {
 	res.json("Server check is working!");
-});
+})
 
 server.use("/data", router);
 

@@ -10,6 +10,7 @@ example> db.receipies.find()
     difficulty: 'easy',
     price: 500
   },
+  
   {
     _id: ObjectId('688daa0bcdd7439603f925d0'),
     recipe_id: 2,
