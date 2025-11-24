@@ -34,7 +34,6 @@ const borrowBook = async (req, res) => {
   }
 };
 
-
 const returnBook = async (req, res) => {
   try {
     const book = await Library.findById(req.params.id);

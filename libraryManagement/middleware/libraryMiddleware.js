@@ -22,7 +22,4 @@ const checkBorrowLimit = async (req, res, next) => {
   next();
 };
 
-module.exports = {
-  validateBookData,
-  checkBorrowLimit,
-};
+module.exports = { validateBookData, checkBorrowLimit};

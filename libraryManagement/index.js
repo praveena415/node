@@ -9,6 +9,7 @@ app.get("/test",(req,res)=>{
 	res.status(200).json({message:"Test Route is working!!"});
 })
 connectToDb()
+
 app.use((req,res)=>{
 	res.status(404).json({Error:"Route Not found,path is Invalid"})
 })
