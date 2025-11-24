@@ -9,6 +9,7 @@ app.use(express.json());
 app.use("/test",(req,res)=>{
 	res.status(200).json({msg:"App is testing!"});
 })
+
 app.use("/tasks",taskRouter)
 app.use((req,res)=>{
 	res.status(404).json({Error:"Rouet is not defined"});

@@ -10,7 +10,6 @@ const validateTaskData = (req, res, next) => {
   if (typeof title !== "string" || typeof description !== "string") {
     return res.status(400).json({ msg: "Title and Description must be strings" });
   }
-
  
   if (!allowedPriorities.includes(priority.toLowerCase())) {
     return res.status(400).json({

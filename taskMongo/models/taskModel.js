@@ -9,6 +9,5 @@ const taskSchema = new mongoose.Schema({
   dueDate: { type: Date, required: true }
 });
 
-
 const taskModel = mongoose.model("Tasks",taskSchema);
 module.exports = taskModel;

@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const taskModel = require("../models/taskModel");
 
-
 const addTask = async(req,res)=>{
 	try{
       let task = await taskModel.create(req.body);
