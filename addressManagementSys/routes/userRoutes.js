@@ -8,5 +8,4 @@ userRouter.post("/users/:userId/address", addAddress);
 userRouter.get("/users/summary", getUserSummary);
 userRouter.get("/users/:userId", getUserDetails);
 userRouter.delete("/users/:userId/address/:addressId", deleteAddress); 
-
 module.exports = userRouter;

@@ -11,7 +11,6 @@ const addUser = async(req,res)=>{
 	}
 }
 
-
 const addAddress = async (req, res) => {
   try {
     const user = await User.findById(req.params.userId);

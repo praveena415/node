@@ -11,6 +11,5 @@ const userSchema = new mongoose.Schema({
 	email:String,age:Number,
 	addresses:[addressSchema]
 })
-
 const userModel =  mongoose.model("users",userSchema);
 module.exports = userModel;
