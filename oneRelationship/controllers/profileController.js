@@ -15,7 +15,6 @@ const addProfile = async(req,res)=>{
 	}
 }
 
-
 const getProfiles = async(req,res)=>{
 	try{
          let profiles =  await profileModel.find().populate("user");

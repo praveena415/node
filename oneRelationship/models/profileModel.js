@@ -8,6 +8,5 @@ const profileSchema = new mongoose.Schema({
     unique: true},
  })
 
-
  const profileModel = mongoose.model("profiles",profileSchema);
  module.exports = profileModel;
