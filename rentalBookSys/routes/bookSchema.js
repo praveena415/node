@@ -2,7 +2,6 @@ const express = require("express");
 const { getAllBooks, addBook, bookRentals, updateBook, deleteBook } = require("../controllers/bookController");
 
 const bookRouter = express.Router();
-
 bookRouter.get("/getAllBooks",getAllBooks);
 bookRouter.post("/addBook",addBook);
 bookRouter.get("/bookRentals/:bookId",bookRentals)

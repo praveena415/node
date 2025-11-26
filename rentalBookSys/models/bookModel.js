@@ -6,6 +6,5 @@ const bookSchema = new mongoose.Schema({
 	rentedBy:[{type:mongoose.Schema.Types.ObjectId,ref:"users"}]
 })
 
-
 const bookModel = mongoose.model("books",bookSchema);
 module.exports = bookModel;

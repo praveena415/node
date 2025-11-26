@@ -9,7 +9,6 @@ const addBook = async(req,res)=>{
 		res.status(404).json({Error:"Error in adding a book"});
 	}
 }
-
 const getAllBooks = async(req,res)=>{
 	try{
         let books = await bookModel.find();
