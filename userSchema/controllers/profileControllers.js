@@ -12,8 +12,6 @@ const addUser = async(req,res)=>{
 	}
 }
 
-
-
 const getUsers = async(req,res)=>{
 	try{
          const {profile} = req.query;

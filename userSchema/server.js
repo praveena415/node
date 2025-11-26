@@ -8,7 +8,6 @@ connectToDB()
 
 app.get("/test",(req,res)=>{
 	res.status(200).json({message:"App is teking"});
-
 })
 app.use("/profiles",profileRouter)
 app.use((req,res)=>{
