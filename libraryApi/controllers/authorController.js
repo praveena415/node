@@ -7,5 +7,7 @@ exports.createAuthor = async(req, res)=>{
         res.status(200).json(author)
     } catch (error) {
         res.status(404).json({error:error.message})
+ 
     }
+    
 }
