@@ -7,7 +7,6 @@ const tripSchema = new mongoose.Schema({
   startTime: { type: Date, required: true },
   endTime: { type: Date, required: true },
 });
-
 const vehicleSchema = new mongoose.Schema({
   registrationNumber: { type: String, required: true, unique: true },
   type: { type: String, required: true, enum: ["car", "truck", "bike"] },

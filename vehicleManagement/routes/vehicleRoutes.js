@@ -7,6 +7,7 @@ const {
   deleteVehicle,
   addTripToVehicle,
   updateTrip,
+  
   deleteTrip,
   getVehiclesWithLongTrips,
   getVehiclesFromCities,

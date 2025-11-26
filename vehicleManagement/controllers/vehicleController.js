@@ -8,7 +8,6 @@ const createVehicle = async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 };
-
 const getAllVehicles = async (req, res) => {
   try {
     const vehicles = await Vehicle.find();
