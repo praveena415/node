@@ -7,6 +7,5 @@ const enrollmentSchema = new mongoose.Schema({
 	isActive:{type:Boolean,default:true}
 })
 
-
 const enrollModel = mongoose.model("Enrollment",enrollmentSchema);
 module.exports = enrollModel;

@@ -9,6 +9,7 @@ const addstudent = async (req, res) => {
     res.status(404).json({ Error: "Error occured in adding a student", err });
   }
 };
+
 const deleteStudent = async (req, res) => {
   try {
     const stuId = req.params.id;

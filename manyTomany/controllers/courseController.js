@@ -10,6 +10,7 @@ const addCourse = async (req, res) => {
   }
 };
 
+
 const deletecourse = async (req, res) => {
   try {
     const stuId = req.params.id;
