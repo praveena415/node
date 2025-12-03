@@ -7,6 +7,7 @@ const app = express();
 app.use(express.json());
 connectToDB();
 
+
 app.get("/test", (req, res) => {
   res.status(200).json({ message: "App is teking" });
 });
