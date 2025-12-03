@@ -12,7 +12,6 @@ app.get("/test",(req,res)=>{
 
 })
 
-
 app.use("/users",userRouter);
 app.use("/notes",notesRouter);
 
