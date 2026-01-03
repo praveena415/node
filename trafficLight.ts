@@ -1,46 +1,50 @@
-class RedState {
-  constructor(trafficLight) {
-    this.trafficLight = trafficLight;
-  }
+interface TrafficLightState {
+  show(): void;
+  next(): void;
+}
 
-  show() {
+class RedState implements TrafficLightState {
+  constructor(private trafficLight: TrafficLight) {}
+
+  show(): void {
     console.log("RED Light → Vehicles must STOP");
   }
 
-  next() {
+  next(): void {
     this.trafficLight.setState(this.trafficLight.greenState);
   }
 }
 
-class GreenState {
-  constructor(trafficLight) {
-    this.trafficLight = trafficLight;
-  }
+class GreenState implements TrafficLightState {
+  constructor(private trafficLight: TrafficLight) {}
 
-  show() {
+  show(): void {
     console.log("GREEN Light → Vehicles can MOVE");
   }
 
-  next() {
+  next(): void {
     this.trafficLight.setState(this.trafficLight.yellowState);
   }
 }
 
-class YellowState {
-  constructor(trafficLight) {
-    this.trafficLight = trafficLight;
-  }
+class YellowState implements TrafficLightState {
+  constructor(private trafficLight: TrafficLight) {}
 
-  show() {
+  show(): void {
     console.log("YELLOW Light → Vehicles should SLOW DOWN");
   }
 
-  next() {
+  next(): void {
     this.trafficLight.setState(this.trafficLight.redState);
   }
 }
 
 class TrafficLight {
+  redState: TrafficLightState;
+  greenState: TrafficLightState;
+  yellowState: TrafficLightState;
+  currentState: TrafficLightState;
+
   constructor() {
     this.redState = new RedState(this);
     this.greenState = new GreenState(this);
@@ -48,15 +52,15 @@ class TrafficLight {
     this.currentState = this.redState;
   }
 
-  setState(state) {
+  setState(state: TrafficLightState): void {
     this.currentState = state;
   }
 
-  show() {
+  show(): void {
     this.currentState.show();
   }
 
-  next() {
+  next(): void {
     this.currentState.next();
   }
 }
